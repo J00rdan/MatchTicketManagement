@@ -33,7 +33,7 @@ public interface Repository<ID, E extends Entity<ID>> {
      * @throws IllegalArgumentException
      *             if the given entity is null.     *
      */
-    E save(E entity);
+    void save(E entity);
 
 
     /**
@@ -44,7 +44,7 @@ public interface Repository<ID, E extends Entity<ID>> {
      * @throws IllegalArgumentException
      *                   if the given id is null.
      */
-    E delete(ID id);
+    void delete(ID id);
 
     /**
      *
@@ -57,6 +57,6 @@ public interface Repository<ID, E extends Entity<ID>> {
      * @throws ValidationException
      *             if the entity is not valid.
      */
-    E update(E entity);
+    void update(E entity);
 
 }

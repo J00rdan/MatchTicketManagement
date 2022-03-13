@@ -3,13 +3,24 @@ package Model;
 public class Customer extends Entity<Integer>{
     private String firstName;
     private String lastName;
-    private int matchID;
+    private Match match;
     private int numberOfTickets;
 
-    public Customer(String firstName, String lastName, int matchID, int numberOfTickets) {
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", match=" + match +
+                ", numberOfTickets=" + numberOfTickets +
+                ", id=" + id +
+                '}';
+    }
+
+    public Customer(String firstName, String lastName, Match match, int numberOfTickets) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.matchID = matchID;
+        this.match = match;
         this.numberOfTickets = numberOfTickets;
     }
 
@@ -29,19 +40,19 @@ public class Customer extends Entity<Integer>{
         this.lastName = lastName;
     }
 
-    public int getMatchID() {
-        return matchID;
-    }
-
-    public void setMatchID(int matchID) {
-        this.matchID = matchID;
-    }
-
     public int getNumberOfTickets() {
         return numberOfTickets;
     }
 
     public void setNumberOfTickets(int numberOfTickets) {
         this.numberOfTickets = numberOfTickets;
+    }
+
+    public Match getMatch() {
+        return match;
+    }
+
+    public void setMatch(Match match) {
+        this.match = match;
     }
 }
