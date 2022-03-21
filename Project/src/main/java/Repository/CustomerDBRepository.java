@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class CustomerDBRepository implements Repository<Integer, Customer> {
+public class CustomerDBRepository implements CustomerRepository {
     private JdbcUtils dbUtils;
 
     private static final Logger logger= LogManager.getLogger();

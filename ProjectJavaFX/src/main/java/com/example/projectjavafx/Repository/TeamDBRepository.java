@@ -1,7 +1,8 @@
-package Repository;
+package com.example.projectjavafx.Repository;
 
-import Model.Team;
-import Utils.JdbcUtils;
+import com.example.projectjavafx.Model.Team;
+import com.example.projectjavafx.Utils.JdbcUtils;
+import com.example.projectjavafx.Validators.DuplicateException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -80,6 +81,9 @@ public class TeamDBRepository implements TeamRepository{
         logger.traceEntry("saving task {} ", team);
         Connection con = dbUtils.getConnection();
 
+        if(checkExistence(team.getTeamName()))
+            throw new DuplicateException("Team already exists");
+
         String query = "insert into teams (team_name) values (?)";
         try(PreparedStatement preStmt = con.prepareStatement(query)){
 
@@ -131,5 +135,52 @@ public class TeamDBRepository implements TeamRepository{
             System.err.println("Error DB " + ex);
         }
         logger.traceExit();
+    }
+
+    @Override
+    public Team findOneByTeamName(String teamName) {
+        logger.traceEntry();
+        Connection con = dbUtils.getConnection();
+
+        String query = "select * from teams where team_name = (?)";
+        try(PreparedStatement preStmt = con.prepareStatement(query)){
+            preStmt.setString(1, teamName);
+            try(ResultSet result = preStmt.executeQuery()){
+                while(result.next()){
+
+                    int id = result.getInt("id");
+                    Team team = new Team(teamName);
+                    team.setId(id);
+
+                    logger.traceExit();
+                    return team;
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB " + ex);
+        }
+        logger.traceExit();
+        return null;
+
+    }
+
+    @Override
+    public boolean checkExistence(String teamName) {
+        Connection con = dbUtils.getConnection();
+
+        String query = "select * from teams where team_name = (?)";
+        try(PreparedStatement preStmt = con.prepareStatement(query)){
+            preStmt.setString(1, teamName);
+            try(ResultSet result = preStmt.executeQuery()){
+                while(result.next()){
+                    return true;
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB " + ex);
+        }
+        return false;
     }
 }

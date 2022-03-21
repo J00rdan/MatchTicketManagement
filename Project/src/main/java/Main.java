@@ -26,16 +26,16 @@ public class Main {
         CustomerDBRepository customerDBRepository = new CustomerDBRepository(props, matchDBRepository);
         EmployeeDBRepository employeeDBRepository = new EmployeeDBRepository(props);
 
-        employeeDBRepository.save(new Employee("A", "A", "Asd"));
+        employeeDBRepository.save(new Employee("B", "B", "Asd"));
 
         for(Employee employee:employeeDBRepository.findAll())
             System.out.println(employee);
 
-        Employee newEmployee = new Employee("A", "A", "AAA");
-        newEmployee.setId(1);
-        employeeDBRepository.update(newEmployee);
-        System.out.println(newEmployee);
+        /////Employee newEmployee = new Employee("B", "B", "AAA");
+        ////newEmployee.setId(2);
+       // employeeDBRepository.update(newEmployee);
+       // System.out.println(newEmployee);
 
-        employeeDBRepository.delete(1);
+        //employeeDBRepository.delete(1);
     }
 }

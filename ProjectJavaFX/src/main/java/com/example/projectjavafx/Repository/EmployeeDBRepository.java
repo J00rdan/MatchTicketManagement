@@ -1,8 +1,7 @@
-package Repository;
+package com.example.projectjavafx.Repository;
 
-import Model.Customer;
-import Model.Employee;
-import Utils.JdbcUtils;
+import com.example.projectjavafx.Model.Employee;
+import com.example.projectjavafx.Utils.JdbcUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -37,8 +36,9 @@ public class EmployeeDBRepository implements EmployeeRepository {
 
                     String firstName = result.getString("first_name");
                     String lastName = result.getString("last_name");
+                    String username = result.getString("user_name");
                     String pass = result.getString("pass");
-                    Employee employee = new Employee(firstName, lastName, pass);
+                    Employee employee = new Employee(firstName, lastName, username, pass);
                     employee.setId(id);
 
                     logger.traceExit();
@@ -64,8 +64,9 @@ public class EmployeeDBRepository implements EmployeeRepository {
                     int id = result.getInt("id");
                     String firstName = result.getString("first_name");
                     String lastName = result.getString("last_name");
+                    String username = result.getString("user_name");
                     String pass = result.getString("pass");
-                    Employee employee = new Employee(firstName, lastName, pass);
+                    Employee employee = new Employee(firstName, lastName, username, pass);
                     employee.setId(id);
                     employees.add(employee);
                 }
@@ -84,12 +85,13 @@ public class EmployeeDBRepository implements EmployeeRepository {
         logger.traceEntry("saving task {} ", entity);
         Connection con = dbUtils.getConnection();
 
-        String query = "insert into employees (first_name, last_name, pass) values (?,?,?)";
+        String query = "insert into employees (first_name, last_name, user_name, pass) values (?,?,?,?)";
         try(PreparedStatement preStmt = con.prepareStatement(query)){
 
             preStmt.setString(1, entity.getFirstName());
             preStmt.setString(2, entity.getLastName());
-            preStmt.setString(3, entity.getPassword());
+            preStmt.setString(3, entity.getUsername());
+            preStmt.setString(4, entity.getPassword());
             int result = preStmt.executeUpdate();
             logger.trace("Saved {} instances", result);
 
@@ -140,7 +142,44 @@ public class EmployeeDBRepository implements EmployeeRepository {
     }
 
     @Override
-    public boolean auth(String pass) {
-        return true;
+    public boolean auth(String username, String pass) {
+        logger.traceEntry();
+        Connection con = dbUtils.getConnection();
+
+        String query = "select * from employees where user_name = (?)";
+        try(PreparedStatement preStmt = con.prepareStatement(query)){
+            preStmt.setString(1, username);
+            try(ResultSet result = preStmt.executeQuery()){
+                while(result.next()){
+                    String password = result.getString("pass");
+                    logger.traceExit();
+                    return password.equals(pass);
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB " + ex);
+        }
+        logger.traceExit();
+        return false;
+    }
+
+    @Override
+    public boolean checkExistence(String username) {
+        Connection con = dbUtils.getConnection();
+
+        String query = "select * from employees where user_name = (?)";
+        try(PreparedStatement preStmt = con.prepareStatement(query)){
+            preStmt.setString(1, username);
+            try(ResultSet result = preStmt.executeQuery()){
+                while(result.next()){
+                    return true;
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB " + ex);
+        }
+        return false;
     }
 }

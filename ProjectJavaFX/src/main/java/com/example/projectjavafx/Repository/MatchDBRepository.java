@@ -1,8 +1,7 @@
-package Repository;
+package com.example.projectjavafx.Repository;
 
-import Model.Match;
-import Model.Team;
-import Utils.JdbcUtils;
+import com.example.projectjavafx.Model.Match;
+import com.example.projectjavafx.Utils.JdbcUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -151,7 +150,30 @@ public class MatchDBRepository implements MatchRepository{
     }
 
     @Override
-    public Iterable<Match> sortByDate() {
-        return null;
+    public Iterable<Match> findAllAvailable() {
+        logger.traceEntry();
+        Connection con = dbUtils.getConnection();
+        List<Match> matches = new ArrayList<>();
+        try(PreparedStatement preStmt=con.prepareStatement("select * from matches where seats_available > 0 order by seats_available desc")){
+            try(ResultSet result = preStmt.executeQuery()){
+                while(result.next()){
+                    int id = result.getInt("id");
+                    int id1 = result.getInt("team1_id");
+                    int id2 = result.getInt("team2_id");
+                    int ticketPrice = result.getInt("ticket_price");
+                    int seatsAvailable = result.getInt("seats_available");
+                    String status = result.getString("status");
+                    Match match = new Match(teamDBRepository.findOne(id1), teamDBRepository.findOne(id2), ticketPrice, seatsAvailable, status);
+                    match.setId(id);
+                    matches.add(match);
+                }
+            }
+        }
+        catch (SQLException e){
+            logger.error(e);
+            System.err.println("Error DB "+ e);
+        }
+        logger.traceExit();
+        return matches;
     }
 }
