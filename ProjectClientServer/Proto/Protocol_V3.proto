@@ -1,0 +1,56 @@
+syntax="proto3";
+package protocol;
+
+option java_package = "protobuffprotocol";
+option java_outer_classname = "Protobufs";
+
+message Employee{
+  string id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string userName = 4;
+  string passwd = 5;
+}
+
+message Customer{
+  string id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  string matchId = 4;
+  string numberOfTickets = 5;
+}
+
+message Match{
+  string id = 1;
+  string team1 = 2;
+  string team2 = 3;
+  string ticketPrice = 4;
+  string seatsAvailable = 5;
+  string status = 6;
+}
+
+message Request {
+  enum Type {Unknown=0; Login = 1; Logout = 2; SellTickets = 3; GetAllMatches=4; GetAllAvailable = 5;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  oneof payload{
+    Employee employee = 2;
+    Customer customer = 3;
+  }
+}
+
+message Response{
+  enum Type { Unknown=0; Ok = 1; Error = 2; TicketsSold = 3;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  string error = 2;
+  repeated Match matches=3;
+  Customer customer=4 ;
+  Employee employee = 5;
+}

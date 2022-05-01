@@ -1,11 +1,8 @@
-import Model.Customer;
 import Model.Employee;
-import Model.Match;
-import Model.Team;
-import Repository.CustomerDBRepository;
-import Repository.EmployeeDBRepository;
-import Repository.MatchDBRepository;
-import Repository.TeamDBRepository;
+import Persistence.CustomerDBRepository;
+import Persistence.EmployeeDBRepository;
+import Persistence.MatchDBRepository;
+import Persistence.TeamDBRepository;
 
 import java.io.FileReader;
 import java.io.IOException;

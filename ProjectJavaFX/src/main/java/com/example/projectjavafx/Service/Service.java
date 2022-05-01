@@ -26,7 +26,7 @@ public class Service {
         this.employeeDBRepository = employeeDBRepository;
     }
 
-    public boolean loginAdmin(String pass){
+    public boolean loginAdmin(String pass)  {
         return pass.equals("admin");
     }
 

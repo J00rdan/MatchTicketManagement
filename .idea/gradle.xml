@@ -8,7 +8,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Project" />
-        <option name="gradleJvm" value="14" />
+        <option name="gradleJvm" value="16" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Project" />
@@ -16,6 +16,26 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ProjectClientServer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ProjectClientServer" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectClient" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectModel" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectModule" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectNetworking" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectPersistence" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectServer" />
+            <option value="$PROJECT_DIR$/ProjectClientServer/ProjectServices" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/ProjectJavaFX" />
         <option name="modules">
