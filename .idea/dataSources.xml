@@ -8,5 +8,27 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/Basketball</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="8eaf1da9-4b03-4a7c-b545-ea37d9745923">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/drago/OneDrive/Desktop/MPP/mpp-proiect-repository-J00rdan/ProjectClientServer/ProjectServer/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/Basketball</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="server" uuid="5537ed9f-3c48-4ce4-bfdd-45be98776928">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>jdbc.properties
+
+C:/Users/drago/OneDrive/Desktop/MPP/mpp-proiect-repository-J00rdan/ProjectClientServer/ProjectServer/src/main/resources/server.properties</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/Basketball</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

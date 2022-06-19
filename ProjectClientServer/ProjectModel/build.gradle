@@ -19,6 +19,8 @@ dependencies {
     implementation 'org.hibernate:hibernate-core:6.0.0.Final'
 
     implementation 'org.javassist:javassist:3.28.0-GA'
+
+    implementation 'org.springframework:spring-context:4.3.8.RELEASE'
 }
 
 test {

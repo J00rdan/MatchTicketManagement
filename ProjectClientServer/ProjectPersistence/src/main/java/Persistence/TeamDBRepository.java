@@ -4,6 +4,7 @@ import Model.Team;
 import Model.Validators.DuplicateException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+@Component
 public class TeamDBRepository implements TeamRepository{
     private JdbcUtils dbUtils;
 

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="Cercetasi" target="16" />
+      <module name="Cercetasi.main" target="16" />
+      <module name="Cercetasi.test" target="16" />
       <module name="ProjectClientServer.ProjectModule.main" target="14" />
       <module name="ProjectClientServer.ProjectModule.test" target="14" />
     </bytecodeTargetLevel>

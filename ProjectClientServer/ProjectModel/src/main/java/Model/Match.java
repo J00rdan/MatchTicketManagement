@@ -3,13 +3,13 @@ package Model;
 import Model.Entity;
 
 public class Match extends Entity<Integer> {
-    private Team Team1;
-    private Team Team2;
+    private String Team1;
+    private String Team2;
     private int ticketPrice;
     private int seatsAvailable;
     private String status;
 
-    public Match(Team Team1, Team Team2, int ticketPrice, int seatsAvailable, String status) {
+    public Match(String Team1, String Team2, int ticketPrice, int seatsAvailable, String status) {
         this.Team1 = Team1;
         this.Team2 = Team2;
         this.ticketPrice = ticketPrice;
@@ -21,19 +21,19 @@ public class Match extends Entity<Integer> {
 
     }
 
-    public Team getTeam1() {
+    public String getTeam1() {
         return Team1;
     }
 
-    public void setTeam1(Team Team1) {
+    public void setTeam1(String Team1) {
         this.Team1 = Team1;
     }
 
-    public Team getTeam2() {
+    public String getTeam2() {
         return Team2;
     }
 
-    public void setTeam2(Team Team2) {
+    public void setTeam2(String Team2) {
         this.Team2 = Team2;
     }
 

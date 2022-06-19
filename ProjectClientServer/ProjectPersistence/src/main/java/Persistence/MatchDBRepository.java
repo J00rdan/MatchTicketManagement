@@ -4,6 +4,9 @@ import Model.Match;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+@Component
 public class MatchDBRepository implements MatchRepository{
     private JdbcUtils dbUtils;
 
@@ -19,6 +23,7 @@ public class MatchDBRepository implements MatchRepository{
 
     private TeamDBRepository teamDBRepository;
 
+    @Autowired
     public MatchDBRepository(Properties props, TeamDBRepository teamDBRepository) {
         logger.info("Initializing TeamDBRepository with properties: {} ",props);
         dbUtils=new JdbcUtils(props);
@@ -36,12 +41,12 @@ public class MatchDBRepository implements MatchRepository{
             try(ResultSet result = preStmt.executeQuery()){
                 while(result.next()){
 
-                    int id1 = result.getInt("team1_id");
-                    int id2 = result.getInt("team2_id");
+                    String team1 = result.getString("team1");
+                    String team2 = result.getString("team2");
                     int ticketPrice = result.getInt("ticket_price");
                     int seatsAvailable = result.getInt("seats_available");
                     String status = result.getString("status");
-                    Match match = new Match(teamDBRepository.findOne(id1), teamDBRepository.findOne(id2), ticketPrice, seatsAvailable, status);
+                    Match match = new Match(team1, team2, ticketPrice, seatsAvailable, status);
                     match.setId(id);
 
                     logger.traceExit();
@@ -66,12 +71,12 @@ public class MatchDBRepository implements MatchRepository{
             try(ResultSet result = preStmt.executeQuery()){
                 while(result.next()){
                     int id = result.getInt("id");
-                    int id1 = result.getInt("team1_id");
-                    int id2 = result.getInt("team2_id");
+                    String team1 = result.getString("team1");
+                    String team2 = result.getString("team2");
                     int ticketPrice = result.getInt("ticket_price");
                     int seatsAvailable = result.getInt("seats_available");
                     String status = result.getString("status");
-                    Match match = new Match(teamDBRepository.findOne(id1), teamDBRepository.findOne(id2), ticketPrice, seatsAvailable, status);
+                    Match match = new Match(team1, team2, ticketPrice, seatsAvailable, status);
                     match.setId(id);
                     matches.add(match);
                 }
@@ -85,16 +90,55 @@ public class MatchDBRepository implements MatchRepository{
         return matches;
     }
 
+    public Match saveMatch(Match match) {
+        logger.traceEntry("saving task {} ", match);
+        Connection con = dbUtils.getConnection();
+
+        String query = "insert into matches (team1, team2, ticket_price, seats_available, status) values (?,?,?,?,?)";
+        try(PreparedStatement preStmt = con.prepareStatement(query)){
+
+            preStmt.setString(1, match.getTeam1());
+            preStmt.setString(2, match.getTeam2());
+            preStmt.setInt(3, match.getTicketPrice());
+            preStmt.setInt(4, match.getSeatsAvailable());
+            preStmt.setString(5, match.getStatus());
+            int result = preStmt.executeUpdate();
+            logger.trace("Saved {} instances", result);
+            match.setId(selectMaxId());
+
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB " + ex);
+        }
+        logger.traceExit();
+        return match;
+    }
+
+    private int selectMaxId(){
+        Connection con = dbUtils.getConnection();
+        int id = 0;
+
+        try (PreparedStatement preparedStatement = con.prepareStatement("select MAX(id) as id from matches")) {
+
+            ResultSet result = preparedStatement.executeQuery();
+            result.next();
+            id = result.getInt("id");
+        } catch (SQLException exception) {
+            System.err.println("Error DB" + exception);
+        }
+        return id;
+    }
+
     @Override
     public void save(Match match) {
         logger.traceEntry("saving task {} ", match);
         Connection con = dbUtils.getConnection();
 
-        String query = "insert into matches (team1_id, team2_id, ticket_price, seats_available, status) values (?,?,?,?,?)";
+        String query = "insert into matches (team1, team2, ticket_price, seats_available, status) values (?,?,?,?,?)";
         try(PreparedStatement preStmt = con.prepareStatement(query)){
 
-            preStmt.setInt(1, match.getTeam1().getId());
-            preStmt.setInt(2, match.getTeam2().getId());
+            preStmt.setString(1, match.getTeam1());
+            preStmt.setString(2, match.getTeam2());
             preStmt.setInt(3, match.getTicketPrice());
             preStmt.setInt(4, match.getSeatsAvailable());
             preStmt.setString(5, match.getStatus());
@@ -119,6 +163,8 @@ public class MatchDBRepository implements MatchRepository{
 
             int result = preStmt.executeUpdate();
             logger.trace("Deleted {} instances", result);
+            if(result == 0)
+                throw new RuntimeException("Entity doesn't exist");
 
         }catch (SQLException ex){
             logger.error(ex);
@@ -157,12 +203,12 @@ public class MatchDBRepository implements MatchRepository{
             try(ResultSet result = preStmt.executeQuery()){
                 while(result.next()){
                     int id = result.getInt("id");
-                    int id1 = result.getInt("team1_id");
-                    int id2 = result.getInt("team2_id");
+                    String team1 = result.getString("team1");
+                    String team2 = result.getString("team2");
                     int ticketPrice = result.getInt("ticket_price");
                     int seatsAvailable = result.getInt("seats_available");
                     String status = result.getString("status");
-                    Match match = new Match(teamDBRepository.findOne(id1), teamDBRepository.findOne(id2), ticketPrice, seatsAvailable, status);
+                    Match match = new Match(team1, team2, ticketPrice, seatsAvailable, status);
                     match.setId(id);
                     matches.add(match);
                 }

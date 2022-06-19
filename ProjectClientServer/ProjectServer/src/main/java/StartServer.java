@@ -59,16 +59,16 @@ public class StartServer {
         CustomerDBRepository customerDBRepository = new CustomerDBRepository(serverProps, matchDBRepository);
         EmployeeDBRepository employeeDBRepository = new EmployeeDBRepository(sessionFactory);
 
-        System.out.println(employeeDBRepository.findAll());
-        System.out.println(employeeDBRepository.findOne(8));
-        employeeDBRepository.save(new Employee("C", "C", "CC", "CC"));
-        System.out.println(employeeDBRepository.findAll());
-        Employee employee = new Employee("CC", "CC", "CC", "DD");
-        employee.setId(10);
-        employeeDBRepository.update(employee);
-        System.out.println(employeeDBRepository.findAll());
-        employeeDBRepository.delete(10);
-        System.out.println(employeeDBRepository.findAll());
+//        System.out.println(employeeDBRepository.findAll());
+//        System.out.println(employeeDBRepository.findOne(8));
+//        employeeDBRepository.save(new Employee("C", "C", "CC", "CC"));
+//        System.out.println(employeeDBRepository.findAll());
+//        Employee employee = new Employee("CC", "CC", "CC", "DD");
+//        employee.setId(10);
+//        employeeDBRepository.update(employee);
+//        System.out.println(employeeDBRepository.findAll());
+//        employeeDBRepository.delete(10);
+//        System.out.println(employeeDBRepository.findAll());
 
         Service srv = new ServerService(teamDBRepository, matchDBRepository, customerDBRepository, employeeDBRepository);
 

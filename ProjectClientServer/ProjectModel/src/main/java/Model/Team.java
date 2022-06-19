@@ -1,7 +1,9 @@
 package Model;
 
 import Model.Entity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Team extends Entity<Integer> {
     private String teamName;
 

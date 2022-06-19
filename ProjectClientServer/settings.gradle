@@ -7,4 +7,5 @@ include 'ProjectServer'
 include 'ProjectNetworking'
 include 'ProjectClient'
 include 'ProjectClient'
+include 'RestServices'
 

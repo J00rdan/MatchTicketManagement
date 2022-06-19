@@ -1,0 +1,25 @@
+.MatchApp {
+    text-align: center;
+    align-content: center;
+    color:green;
+}
+.MatchApp-h1{
+    text-align: center;
+
+    font-family:'Courier New';
+    font-size: large;
+
+}
+.MatchTable{
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: medium;
+    color: green;
+}
+.MatchApp-body{
+    align-content: center;
+}
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
