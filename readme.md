@@ -1,7 +1,7 @@
 # Ticket Management App
 
 ## Description
-Java application that helps users to manage tickets to different sport events
+Web application that helps users to manage tickets to different sport events
 
 ### Main Features
  - Selling tickets
