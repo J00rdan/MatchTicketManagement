@@ -1,7 +1,12 @@
 # Ticket Management App
 
 ## Description
-The application is aimed to be used by Match
+Java application that helps users to manage tickets to different sport events
+
+### Main Features
+ - Selling tickets
+ - Updating the number of tickets or the price of a ticket
+ - Adding tickets for a certain match
 
 ## Technologies used
  - Java SE - used for the main development of the application
