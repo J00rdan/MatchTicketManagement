@@ -37,7 +37,6 @@ public class MatchController {
         System.out.println(match);
 
         return matchRepository.saveMatch(match);
-
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)

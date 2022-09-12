@@ -1,0 +1,527 @@
+13 Mar 2022 14:14:35,317 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.url=jdbc:postgresql://localhost:5432/Basketball}
+13 Mar 2022 14:14:35,323 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:14:35,323 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:14:35,323 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:14:35,326 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:14:35,326 INFO  Utils.JdbcUtils 30 getNewConnection - user: null
+13 Mar 2022 14:14:35,326 INFO  Utils.JdbcUtils 31 getNewConnection - pass: null
+13 Mar 2022 14:14:35,433 ERROR Utils.JdbcUtils 40 getNewConnection - org.postgresql.util.PSQLException: The server requested SCRAM-based authentication, but no password was provided.
+13 Mar 2022 14:14:35,436 TRACE Utils.JdbcUtils 56 getConnection - Exit
+13 Mar 2022 14:16:16,650 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:16:16,666 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:16:16,667 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:16:16,668 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:16:16,668 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:16:16,669 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:16:16,669 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:16:17,317 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:16:17,341 ERROR Persistence.Repository.TeamDBRepository 91 save - org.postgresql.util.PSQLException: ERROR: relation "teams" does not exist
+  Position: 13
+13 Mar 2022 14:16:17,342 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:16:17,342 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:16:17,342 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:16:17,342 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:16:17,343 ERROR Persistence.Repository.TeamDBRepository 71 findAll - org.postgresql.util.PSQLException: ERROR: relation "teams" does not exist
+  Position: 15
+13 Mar 2022 14:16:17,344 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:20:06,880 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:20:06,894 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:20:06,895 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:20:06,895 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:20:06,896 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:20:06,896 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:20:06,897 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:20:07,312 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7c3fdb62)
+13 Mar 2022 14:20:07,328 ERROR Persistence.Repository.TeamDBRepository 91 save - org.postgresql.util.PSQLException: ERROR: column "teamname" of relation "teams" does not exist
+  Position: 20
+13 Mar 2022 14:20:07,330 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:20:07,330 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:20:07,330 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:20:07,330 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7c3fdb62)
+13 Mar 2022 14:20:07,338 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:21:18,544 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:21:18,560 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:21:18,561 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:21:18,563 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:21:18,563 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:21:18,564 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:21:18,565 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:21:19,175 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:21:19,195 TRACE Persistence.Repository.TeamDBRepository 88 save - Saved 1 instances
+13 Mar 2022 14:21:19,195 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:21:19,195 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:21:19,196 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:21:19,196 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:21:19,212 ERROR Persistence.Repository.TeamDBRepository 71 findAll - org.postgresql.util.PSQLException: The column name teamName was not found in this ResultSet.
+13 Mar 2022 14:21:19,212 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:21:49,773 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:21:49,790 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:21:49,793 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:21:49,794 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:21:49,794 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:21:49,795 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:21:49,795 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:21:50,416 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:21:50,456 ERROR Persistence.Repository.TeamDBRepository 91 save - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "team_teamname_uindex"
+  Detail: Key (team_name)=(Tesla) already exists.
+13 Mar 2022 14:21:50,457 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:22:13,799 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:22:13,815 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:22:13,816 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:22:13,817 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:22:13,818 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:22:13,818 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:22:13,818 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:22:14,382 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:22:14,396 TRACE Persistence.Repository.TeamDBRepository 88 save - Saved 1 instances
+13 Mar 2022 14:22:14,396 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:23:37,856 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:23:37,867 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:23:37,867 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:23:37,868 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:23:37,868 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:23:37,869 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:23:37,869 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:23:38,400 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:23:38,421 ERROR Persistence.Repository.TeamDBRepository 91 save - org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "team_teamname_uindex"
+  Detail: Key (team_name)=(Lakers) already exists.
+13 Mar 2022 14:23:38,422 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:23:38,422 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:23:38,422 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:23:38,422 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:23:38,431 ERROR Persistence.Repository.TeamDBRepository 71 findAll - org.postgresql.util.PSQLException: The column name teamName was not found in this ResultSet.
+13 Mar 2022 14:23:38,432 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:24:26,091 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:24:26,105 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:24:26,105 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:24:26,106 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:24:26,106 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:24:26,107 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:24:26,107 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:24:26,518 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:24:26,529 TRACE Persistence.Repository.TeamDBRepository 88 save - Saved 1 instances
+13 Mar 2022 14:24:26,529 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:24:26,530 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:24:26,530 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:24:26,530 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:24:26,538 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:25:03,599 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:25:03,613 TRACE Persistence.Repository.TeamDBRepository 80 save - Enter saving task Model.Team{id=null, teamName='Suns'}
+13 Mar 2022 14:25:03,613 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:25:03,615 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:25:03,616 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:25:03,616 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:25:03,617 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:25:03,988 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7c3fdb62)
+13 Mar 2022 14:25:04,004 TRACE Persistence.Repository.TeamDBRepository 88 save - Saved 1 instances
+13 Mar 2022 14:25:04,004 TRACE Persistence.Repository.TeamDBRepository 94 save - Exit
+13 Mar 2022 14:25:04,006 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:25:04,006 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:25:04,006 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7c3fdb62)
+13 Mar 2022 14:25:04,015 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:26:19,866 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:26:19,880 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:26:19,883 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:26:19,883 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:26:19,884 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:26:19,885 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:26:19,886 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:26:20,287 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@14f232c4)
+13 Mar 2022 14:26:20,304 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:26:20,304 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:26:20,305 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:26:20,305 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@14f232c4)
+13 Mar 2022 14:26:20,313 ERROR Persistence.Repository.TeamDBRepository 46 findOne - org.postgresql.util.PSQLException: The column name teamName was not found in this ResultSet.
+13 Mar 2022 14:26:20,314 TRACE Persistence.Repository.TeamDBRepository 49 findOne - Exit
+13 Mar 2022 14:26:54,523 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:26:54,544 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:26:54,546 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:26:54,546 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:26:54,548 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:26:54,549 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:26:54,549 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:26:55,149 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4bbf6d0e)
+13 Mar 2022 14:26:55,165 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:26:55,166 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:26:55,166 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:26:55,166 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4bbf6d0e)
+13 Mar 2022 14:26:55,168 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:28:01,539 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:28:01,543 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:28:01,543 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:28:01,543 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:28:01,543 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:28:01,544 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:28:01,544 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:28:01,728 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4bbf6d0e)
+13 Mar 2022 14:28:01,741 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:28:01,741 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:28:01,742 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:28:01,742 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4bbf6d0e)
+13 Mar 2022 14:28:01,744 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:28:28,225 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:28:28,231 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:28:28,232 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:28:28,232 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:28:28,232 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:28:28,233 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:28:28,233 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:28:28,484 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:28:28,499 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:28:28,500 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:28:28,500 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:28:28,501 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:28:28,503 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:30:24,018 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:30:24,022 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:30:24,023 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:30:24,024 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:30:24,024 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:30:24,024 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:30:24,024 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:30:24,230 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:30:24,241 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:30:24,242 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:30:24,242 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:30:24,242 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:30:24,244 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:30:24,245 TRACE Persistence.Repository.TeamDBRepository 118 update - Enter
+13 Mar 2022 14:30:24,245 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:30:24,245 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:30:24,250 TRACE Persistence.Repository.TeamDBRepository 127 update - Saved 1 instances
+13 Mar 2022 14:30:24,250 TRACE Persistence.Repository.TeamDBRepository 133 update - Exit
+13 Mar 2022 14:30:24,250 TRACE Persistence.Repository.TeamDBRepository 56 findAll - Enter
+13 Mar 2022 14:30:24,250 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:30:24,250 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2bec854f)
+13 Mar 2022 14:30:24,251 TRACE Persistence.Repository.TeamDBRepository 74 findAll - Exit
+13 Mar 2022 14:31:11,363 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:31:11,367 TRACE Persistence.Repository.TeamDBRepository 99 delete - Enter
+13 Mar 2022 14:31:11,367 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:31:11,368 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:31:11,368 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:31:11,368 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:31:11,369 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:31:11,582 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@14f232c4)
+13 Mar 2022 14:31:11,594 TRACE Persistence.Repository.TeamDBRepository 107 delete - Saved 1 instances
+13 Mar 2022 14:31:11,595 TRACE Persistence.Repository.TeamDBRepository 113 delete - Exit
+13 Mar 2022 14:49:09,410 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:49:09,415 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:49:09,416 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:49:09,416 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:49:09,417 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:49:09,417 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:49:09,417 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:49:09,417 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:49:09,625 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3336e6b6)
+13 Mar 2022 14:49:09,637 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:49:09,637 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:49:09,638 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:49:09,638 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3336e6b6)
+13 Mar 2022 14:49:09,638 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:49:09,639 TRACE Persistence.Repository.MatchDBRepository 92 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:49:09,640 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:49:09,640 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:49:09,640 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:49:09,640 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:49:09,640 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:49:09,673 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5456afaa)
+13 Mar 2022 14:49:09,681 ERROR Persistence.Repository.MatchDBRepository 107 save - org.postgresql.util.PSQLException: ERROR: INSERT has more target columns than expressions
+  Position: 32
+13 Mar 2022 14:49:09,681 TRACE Persistence.Repository.MatchDBRepository 110 save - Exit
+13 Mar 2022 14:51:44,577 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:51:44,582 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:51:44,584 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:51:44,584 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:51:44,584 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:51:44,584 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:51:44,585 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:51:44,585 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:51:44,774 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@102cec62)
+13 Mar 2022 14:51:44,787 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:51:44,788 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:51:44,788 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:51:44,788 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@102cec62)
+13 Mar 2022 14:51:44,789 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:51:44,790 TRACE Persistence.Repository.MatchDBRepository 92 save - Enter saving task Model.Entity{id=null}
+13 Mar 2022 14:51:44,790 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:51:44,791 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:51:44,791 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:51:44,791 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:51:44,791 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:51:44,824 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@495ee280)
+13 Mar 2022 14:51:44,829 TRACE Persistence.Repository.MatchDBRepository 104 save - Saved 1 instances
+13 Mar 2022 14:51:44,830 TRACE Persistence.Repository.MatchDBRepository 110 save - Exit
+13 Mar 2022 14:52:36,638 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:52:36,643 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:52:36,644 TRACE Persistence.Repository.MatchDBRepository 32 findOne - Enter
+13 Mar 2022 14:52:36,645 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:52:36,645 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:52:36,645 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:52:36,645 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:52:36,646 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:52:36,846 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba8c737)
+13 Mar 2022 14:52:36,859 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:52:36,859 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:52:36,859 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:52:36,860 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:52:36,860 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:52:36,860 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:52:36,897 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3e44f2a5)
+13 Mar 2022 14:52:36,901 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:52:36,901 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:52:36,902 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:52:36,902 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3e44f2a5)
+13 Mar 2022 14:52:36,902 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:52:36,903 TRACE Persistence.Repository.MatchDBRepository 49 findOne - Exit
+13 Mar 2022 14:54:41,508 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:54:41,513 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:54:41,514 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:54:41,515 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:54:41,515 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:54:41,515 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:54:41,515 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:54:41,515 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:54:41,727 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@102cec62)
+13 Mar 2022 14:54:41,741 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:54:41,742 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:54:41,742 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:54:41,742 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@102cec62)
+13 Mar 2022 14:54:41,743 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:54:41,743 TRACE Persistence.Repository.MatchDBRepository 134 update - Enter
+13 Mar 2022 14:54:41,744 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:54:41,744 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:54:41,744 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:54:41,744 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:54:41,744 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:54:41,785 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@723e88f9)
+13 Mar 2022 14:54:41,791 TRACE Persistence.Repository.MatchDBRepository 144 update - Saved 1 instances
+13 Mar 2022 14:54:41,791 TRACE Persistence.Repository.MatchDBRepository 150 update - Exit
+13 Mar 2022 14:54:41,791 TRACE Persistence.Repository.MatchDBRepository 64 findAll - Enter
+13 Mar 2022 14:54:41,792 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:54:41,792 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@723e88f9)
+13 Mar 2022 14:54:41,793 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:54:41,793 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:54:41,794 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@102cec62)
+13 Mar 2022 14:54:41,795 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:54:41,795 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:54:41,795 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:54:41,795 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@102cec62)
+13 Mar 2022 14:54:41,796 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:54:41,796 TRACE Persistence.Repository.MatchDBRepository 86 findAll - Exit
+13 Mar 2022 14:55:29,457 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:55:29,465 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:55:29,466 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:55:29,467 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:29,467 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:55:29,467 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:55:29,467 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:55:29,468 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:55:29,670 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@15a04efb)
+13 Mar 2022 14:55:29,684 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:55:29,684 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:55:29,685 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:29,685 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@15a04efb)
+13 Mar 2022 14:55:29,685 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:55:29,686 TRACE Persistence.Repository.MatchDBRepository 134 update - Enter
+13 Mar 2022 14:55:29,686 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:29,686 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:55:29,686 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:55:29,686 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:55:29,686 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:55:29,720 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@463fd068)
+13 Mar 2022 14:55:29,725 TRACE Persistence.Repository.MatchDBRepository 144 update - Saved 1 instances
+13 Mar 2022 14:55:29,725 TRACE Persistence.Repository.MatchDBRepository 150 update - Exit
+13 Mar 2022 14:55:29,725 TRACE Persistence.Repository.MatchDBRepository 64 findAll - Enter
+13 Mar 2022 14:55:29,725 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:29,725 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@463fd068)
+13 Mar 2022 14:55:29,727 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:55:29,727 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:29,727 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@15a04efb)
+13 Mar 2022 14:55:29,727 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:55:29,727 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 14:55:29,729 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:29,729 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@15a04efb)
+13 Mar 2022 14:55:29,729 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 14:55:29,729 TRACE Persistence.Repository.MatchDBRepository 86 findAll - Exit
+13 Mar 2022 14:55:55,513 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:55:55,519 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 14:55:55,520 TRACE Persistence.Repository.MatchDBRepository 115 delete - Enter
+13 Mar 2022 14:55:55,520 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 14:55:55,521 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 14:55:55,521 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 14:55:55,521 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 14:55:55,521 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 14:55:55,836 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@205d38da)
+13 Mar 2022 14:55:55,847 TRACE Persistence.Repository.MatchDBRepository 123 delete - Deleted 1 instances
+13 Mar 2022 14:55:55,848 TRACE Persistence.Repository.MatchDBRepository 129 delete - Exit
+13 Mar 2022 15:12:09,248 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:12:09,255 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:12:09,257 INFO  Persistence.Repository.CustomerDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:12:09,259 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:12:09,259 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:12:09,260 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 15:12:09,260 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 15:12:09,260 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 15:12:09,260 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 15:12:09,473 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3336e6b6)
+13 Mar 2022 15:12:09,487 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:12:09,487 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:12:09,488 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:12:09,488 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3336e6b6)
+13 Mar 2022 15:12:09,488 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:12:09,495 TRACE Persistence.Repository.MatchDBRepository 92 save - Enter saving task Model.Match{id=null, Team1=Model.Team{id=1, teamName='Chicago Bulls'}, Team2=Model.Team{id=3, teamName='Lakers'}, ticketPrice=50, seatsAvailable=100, status='Regular'}
+13 Mar 2022 15:12:09,496 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:12:09,496 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 15:12:09,496 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 15:12:09,496 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 15:12:09,496 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 15:12:09,529 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@12299890)
+13 Mar 2022 15:12:09,535 TRACE Persistence.Repository.MatchDBRepository 104 save - Saved 1 instances
+13 Mar 2022 15:12:09,535 TRACE Persistence.Repository.MatchDBRepository 110 save - Exit
+13 Mar 2022 15:14:47,875 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:14:47,879 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:14:47,882 INFO  Persistence.Repository.CustomerDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:14:47,884 TRACE Persistence.Repository.MatchDBRepository 32 findOne - Enter
+13 Mar 2022 15:14:47,885 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:47,885 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 15:14:47,886 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 15:14:47,886 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 15:14:47,886 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 15:14:48,100 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19b89d4)
+13 Mar 2022 15:14:48,114 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,114 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,114 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 15:14:48,114 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 15:14:48,115 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 15:14:48,115 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 15:14:48,151 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,154 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,155 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,155 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,155 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,156 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,156 TRACE Persistence.Repository.MatchDBRepository 49 findOne - Exit
+13 Mar 2022 15:14:48,170 TRACE Persistence.Repository.CustomerDBRepository 89 save - Enter saving task Model.Customer{firstName='A', lastName='A', match=Model.Match{id=2, Team1=Model.Team{id=1, teamName='Chicago Bulls'}, Team2=Model.Team{id=3, teamName='Lakers'}, ticketPrice=50, seatsAvailable=100, status='Regular'}, numberOfTickets=1, id=null}
+13 Mar 2022 15:14:48,170 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,171 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 15:14:48,171 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 15:14:48,171 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 15:14:48,171 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 15:14:48,214 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2fba3fc4)
+13 Mar 2022 15:14:48,222 TRACE Persistence.Repository.CustomerDBRepository 100 save - Saved 1 instances
+13 Mar 2022 15:14:48,222 TRACE Persistence.Repository.CustomerDBRepository 106 save - Exit
+13 Mar 2022 15:14:48,222 TRACE Persistence.Repository.CustomerDBRepository 62 findAll - Enter
+13 Mar 2022 15:14:48,222 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,222 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2fba3fc4)
+13 Mar 2022 15:14:48,223 TRACE Persistence.Repository.MatchDBRepository 32 findOne - Enter
+13 Mar 2022 15:14:48,224 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,224 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19b89d4)
+13 Mar 2022 15:14:48,225 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,225 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,225 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,226 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,226 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,226 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,226 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,227 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,227 TRACE Persistence.Repository.MatchDBRepository 49 findOne - Exit
+13 Mar 2022 15:14:48,227 TRACE Persistence.Repository.CustomerDBRepository 83 findAll - Exit
+13 Mar 2022 15:14:48,228 TRACE Persistence.Repository.MatchDBRepository 32 findOne - Enter
+13 Mar 2022 15:14:48,228 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,228 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19b89d4)
+13 Mar 2022 15:14:48,229 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,229 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,229 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,230 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,230 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,230 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,230 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,231 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,231 TRACE Persistence.Repository.MatchDBRepository 49 findOne - Exit
+13 Mar 2022 15:14:48,231 TRACE Persistence.Repository.CustomerDBRepository 130 update - Enter
+13 Mar 2022 15:14:48,231 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,231 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2fba3fc4)
+13 Mar 2022 15:14:48,232 TRACE Persistence.Repository.CustomerDBRepository 139 update - Updated 1 instances
+13 Mar 2022 15:14:48,232 TRACE Persistence.Repository.CustomerDBRepository 145 update - Exit
+13 Mar 2022 15:14:48,233 TRACE Persistence.Repository.CustomerDBRepository 32 findOne - Enter
+13 Mar 2022 15:14:48,233 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,233 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2fba3fc4)
+13 Mar 2022 15:14:48,234 TRACE Persistence.Repository.MatchDBRepository 32 findOne - Enter
+13 Mar 2022 15:14:48,234 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,234 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19b89d4)
+13 Mar 2022 15:14:48,235 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,235 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,235 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,236 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,236 TRACE Persistence.Repository.TeamDBRepository 28 findOne - Enter
+13 Mar 2022 15:14:48,236 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,236 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64e7619d)
+13 Mar 2022 15:14:48,237 TRACE Persistence.Repository.TeamDBRepository 41 findOne - Exit
+13 Mar 2022 15:14:48,237 TRACE Persistence.Repository.MatchDBRepository 49 findOne - Exit
+13 Mar 2022 15:14:48,237 TRACE Persistence.Repository.CustomerDBRepository 48 findOne - Exit
+13 Mar 2022 15:14:48,238 TRACE Persistence.Repository.CustomerDBRepository 111 delete - Enter
+13 Mar 2022 15:14:48,238 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:14:48,238 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2fba3fc4)
+13 Mar 2022 15:14:48,239 TRACE Persistence.Repository.CustomerDBRepository 119 delete - Deleted 1 instances
+13 Mar 2022 15:14:48,239 TRACE Persistence.Repository.CustomerDBRepository 125 delete - Exit
+13 Mar 2022 15:25:20,582 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:25:20,587 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:25:20,589 INFO  Persistence.Repository.CustomerDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:25:20,591 INFO  Persistence.Repository.EmployeeDBRepository 23 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+13 Mar 2022 15:25:20,600 TRACE Persistence.Repository.EmployeeDBRepository 84 save - Enter saving task Model.Employee{firstName='A', lastName='A', password='Asd', id=null}
+13 Mar 2022 15:25:20,600 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:25:20,600 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+13 Mar 2022 15:25:20,600 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+13 Mar 2022 15:25:20,601 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+13 Mar 2022 15:25:20,601 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+13 Mar 2022 15:25:20,804 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@51a9ad5e)
+13 Mar 2022 15:25:20,812 TRACE Persistence.Repository.EmployeeDBRepository 94 save - Saved 1 instances
+13 Mar 2022 15:25:20,814 TRACE Persistence.Repository.EmployeeDBRepository 100 save - Exit
+13 Mar 2022 15:25:20,814 TRACE Persistence.Repository.EmployeeDBRepository 58 findAll - Enter
+13 Mar 2022 15:25:20,814 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:25:20,815 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@51a9ad5e)
+13 Mar 2022 15:25:20,819 TRACE Persistence.Repository.EmployeeDBRepository 78 findAll - Exit
+13 Mar 2022 15:25:20,819 TRACE Persistence.Repository.EmployeeDBRepository 124 update - Enter
+13 Mar 2022 15:25:20,819 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:25:20,819 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@51a9ad5e)
+13 Mar 2022 15:25:20,821 TRACE Persistence.Repository.EmployeeDBRepository 133 update - Updated 1 instances
+13 Mar 2022 15:25:20,822 TRACE Persistence.Repository.EmployeeDBRepository 139 update - Exit
+13 Mar 2022 15:25:20,822 TRACE Persistence.Repository.EmployeeDBRepository 105 delete - Enter
+13 Mar 2022 15:25:20,822 TRACE Utils.JdbcUtils 47 getConnection - Enter
+13 Mar 2022 15:25:20,822 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@51a9ad5e)
+13 Mar 2022 15:25:20,824 TRACE Persistence.Repository.EmployeeDBRepository 113 delete - Deleted 1 instances
+13 Mar 2022 15:25:20,824 TRACE Persistence.Repository.EmployeeDBRepository 119 delete - Exit
+14 Mar 2022 09:58:25,974 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+14 Mar 2022 09:58:25,986 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+14 Mar 2022 09:58:25,990 INFO  Persistence.Repository.CustomerDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+14 Mar 2022 09:58:25,993 INFO  Persistence.Repository.EmployeeDBRepository 23 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+14 Mar 2022 09:58:26,002 TRACE Persistence.Repository.EmployeeDBRepository 84 save - Enter saving task Model.Employee{firstName='B', lastName='B', password='Asd', id=null}
+14 Mar 2022 09:58:26,003 TRACE Utils.JdbcUtils 47 getConnection - Enter
+14 Mar 2022 09:58:26,003 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+14 Mar 2022 09:58:26,003 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+14 Mar 2022 09:58:26,003 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+14 Mar 2022 09:58:26,003 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+14 Mar 2022 09:58:26,364 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7bf3a5d8)
+14 Mar 2022 09:58:26,383 TRACE Persistence.Repository.EmployeeDBRepository 94 save - Saved 1 instances
+14 Mar 2022 09:58:26,383 TRACE Persistence.Repository.EmployeeDBRepository 100 save - Exit
+14 Mar 2022 09:58:26,384 TRACE Persistence.Repository.EmployeeDBRepository 58 findAll - Enter
+14 Mar 2022 09:58:26,384 TRACE Utils.JdbcUtils 47 getConnection - Enter
+14 Mar 2022 09:58:26,384 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7bf3a5d8)
+14 Mar 2022 09:58:26,392 TRACE Persistence.Repository.EmployeeDBRepository 78 findAll - Exit
+19 Mar 2022 11:45:03,786 INFO  Persistence.Repository.TeamDBRepository 22 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+19 Mar 2022 11:45:03,809 INFO  Persistence.Repository.MatchDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+19 Mar 2022 11:45:03,818 INFO  Persistence.Repository.CustomerDBRepository 25 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+19 Mar 2022 11:45:03,826 INFO  Persistence.Repository.EmployeeDBRepository 23 <init> - Initializing TeamDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/Basketball, jdbc.pass=postgres}
+19 Mar 2022 11:45:03,842 TRACE Persistence.Repository.EmployeeDBRepository 84 save - Enter saving task Model.Employee{firstName='B', lastName='B', password='Asd', id=null}
+19 Mar 2022 11:45:03,842 TRACE Utils.JdbcUtils 47 getConnection - Enter
+19 Mar 2022 11:45:03,843 TRACE Utils.JdbcUtils 24 getNewConnection - Enter
+19 Mar 2022 11:45:03,843 INFO  Utils.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/Basketball
+19 Mar 2022 11:45:03,843 INFO  Utils.JdbcUtils 30 getNewConnection - user: postgres
+19 Mar 2022 11:45:03,845 INFO  Utils.JdbcUtils 31 getNewConnection - pass: postgres
+19 Mar 2022 11:45:04,871 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2205a05d)
+19 Mar 2022 11:45:04,911 TRACE Persistence.Repository.EmployeeDBRepository 94 save - Saved 1 instances
+19 Mar 2022 11:45:04,911 TRACE Persistence.Repository.EmployeeDBRepository 100 save - Exit
+19 Mar 2022 11:45:04,911 TRACE Persistence.Repository.EmployeeDBRepository 58 findAll - Enter
+19 Mar 2022 11:45:04,911 TRACE Utils.JdbcUtils 47 getConnection - Enter
+19 Mar 2022 11:45:04,912 TRACE Utils.JdbcUtils 56 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2205a05d)
+19 Mar 2022 11:45:04,924 TRACE Persistence.Repository.EmployeeDBRepository 78 findAll - Exit
